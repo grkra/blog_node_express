@@ -1,0 +1,14 @@
+<h1> Dodaj nowy wpis </h1>
+<form action="/add" method="post">
+    <div class="mb-3 ">
+        <label for="titleInput" class="form-label">Tytuł</label>
+        <input type="text" class="form-control" id="titleInput" required name="title">
+    </div>
+    <div class="mb-3">
+        <label for="textInput" class="form-label">Treść</label>
+        <textarea class="form-control" id="textInput" rows="10" required name="text"></textarea>
+    </div>
+    <div class="text-end">
+        <button type="submit" class="btn btn-primary">Dodaj</button>
+    </div>
+</form>

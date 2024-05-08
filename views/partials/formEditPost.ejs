@@ -1,0 +1,17 @@
+<h1> Edytuj wpis </h1>
+<form action="/edit" method="post">
+    <div class="mb-3 ">
+        <label for="titleInput" class="form-label">Tytuł</label>
+        <input type="text" class="form-control" id="titleInput" required name="title" value="<%= editedPost.title %>">
+    </div>
+    <div class="mb-3">
+        <label for="textInput" class="form-label">Treść</label>
+        <textarea class="form-control" id="textInput" rows="10" required name="text"><%= editedPost.text %></textarea>
+    </div>
+    <input type="hidden" name="id" , value="<%= editedPost.id %>">
+    <div class="text-end">
+        <a href="/" class="btn btn-outline-primary me-3"> Anuluj
+        </a>
+        <button type="submit" class="btn btn-primary">Zmień</button>
+    </div>
+</form>
